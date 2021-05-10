@@ -1,10 +1,10 @@
 int oneturn = 90;  //seconds for onehour turn
 int timeout = 1800;  //seconds until breakdown
-#define evening_stopper 0
-#define morning_stopper 0
-#define moto 0
-#define revers 0
-#define power 0
+#define evening_stopper 2
+#define morning_stopper 3
+#define moto 16
+#define revers 17
+#define power 15
 
 int expected_position = 0;
 int real_position = 0;
