@@ -4,4 +4,4 @@ A3 - engine_morning    (D17)
 D2 - evening_stopper
 D3 - morning_stopper
 
-A1 - power
+A1 - power    (D15)
