@@ -1,5 +1,6 @@
 int oneturn = 360;  //seconds for onehour turn
 int timeout = 2900;  //seconds until breakdown
+bool serial = false;  //developer mode
 #define evening_stopper 2
 #define morning_stopper 3
 #define moto 16
@@ -20,7 +21,9 @@ int getTime() { //method to recieve {int hours} from clocks
 }
 
 void setup() {
-  Serial.begin(9600);
+  if (serial) {
+    Serial.begin(9600);
+  }
   Serial.println("Setup started");
   pinMode(morning_stopper, INPUT);
   pinMode(evening_stopper, INPUT);
@@ -49,7 +52,7 @@ void loop() {
   Serial.println("New loop began");
   clocker = 0;
   int difference = 0;
-
+  expected_position = 0;
   switch (getTime()) {
     case 10:
       expected_position = 1;
