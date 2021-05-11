@@ -62,7 +62,7 @@ void loop() {
     case 16:
       expected_position = 7;
       break;
-    default:
+    case 21:
       expected_position = 0;
       break;
   }
