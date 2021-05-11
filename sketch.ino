@@ -1,6 +1,6 @@
 int oneturn = 360;  //seconds for onehour turn
 int timeout = 2900;  //seconds until breakdown
-bool serial = false;  //developer mode
+bool serial = true;  //developer mode
 #define evening_stopper 2
 #define morning_stopper 3
 #define moto 16
